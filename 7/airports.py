@@ -1,14 +1,19 @@
-airports = {
-    "EFHK": "Helsinki-Vantaa Airport",
-    "SJRG": "Rio Grande Airport",
-    "EVRA": "Riga International Airport",
-    "UGSB": "Alexander Kartveli Batumi International Airport",
-}
+import csv
+
+airports = dict()
+
+with open("../airports.csv") as file:
+    reader = csv.reader(file)
+    for line in reader:
+        airports |= {line[1]: line[3]}
 
 if __name__ == '__main__':
     while True:
         print("`add` or `fetch`?")
         action = input(">> ").strip().lower()
+        if not action:
+            break
+
         if action == "add":
             icao = input("ICAO: ").strip().upper()
             name = input("Name: ").strip()
