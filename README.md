@@ -64,6 +64,9 @@
 
 ## 11. Inheritance
 
+1. [Again, extend the program by adding a new drive method that receives the number of hours as a parameter.](11/publications.py)
+2. [Extend the previosly written Car class by adding two subclasses: ElectricCar and GasolineCar.](11/cars.py)
+
 ## 12. Using external interfaces
 
 ## 13. Setting up a backend service with an interface

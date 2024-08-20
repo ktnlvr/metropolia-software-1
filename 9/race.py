@@ -18,8 +18,8 @@ def race(racers: int, early_exit: bool = True) -> tuple[list[Car], list[Car]]:
             car.accelerate(25. * random() - 10.)
 
             time_to_finish = 0
-            if car.current_speed_km_h != 0:
-                time_to_finish = (FINISH_LINE_KM - car.travelled_distance_km) / car.current_speed_km_h
+            if car.current_speed_km_per_h != 0:
+                time_to_finish = (FINISH_LINE_KM - car.travelled_distance_km) / car.current_speed_km_per_h
 
             car.drive(1)
 
@@ -70,8 +70,7 @@ def main():
     max_travelled_distance_len = max(map(lambda c: len(str(c.travelled_distance_km)), participants))
     fmt = f"| {{:<{max_car_registration_len}}} | {{:{max_speed_len}}} | {{:{max_travelled_distance_len}}} |"
 
-    # not printing out anything else, since the current speed and travelled distance
-    # are not really parameters of the car
+    # not printing out anything else, since the current speed is not really a car parameter
     print(fmt.format("no", "max speed", "travelled distance"))
     print(fmt.format("-" * max_car_registration_len, "-" * max_speed_len, "-" * max_travelled_distance_len))
     for c in participants:
