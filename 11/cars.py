@@ -5,6 +5,10 @@
 # I am avoiding code reuse,
 # which is a shame,
 # but I guess it isn't a criteria here
+#
+# 2024-08-22: Juha said it's fine
+#             I can choose if I want a spoiled commit history
+#             Or code duplication, I am choosing code duplication
 from random import random
 from abc import ABC, abstractmethod
 
