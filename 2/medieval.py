@@ -10,4 +10,4 @@ if __name__ == '__main__':
     g = grams - kg * 1000
 
     print("The weight in modern units:")
-    print(f"{kg} kilograms and {g:.5} grams.")
+    print(f"{kg} kilograms and {g:.2f} grams.")
