@@ -53,6 +53,10 @@
 
 ## 8. Using relational databases
 
+1. [Write a program that asks the user to enter the ICAO code of an airport.](8/icao.py)
+2. [Write a program that asks the user to enter the area code (for example FI) and prints out the airports located in that country ordered by airport type](8/area.py)
+3. [Write a program that asks the user to enter the ICAO codes of two airports.](8/distance.py)
+
 ## 9. Fundamentals of object-oriented programming
 
 1. [Write a Car class that has the following properties: registration number, maximum speed, current speed and travelled distance.](9/car.py)
