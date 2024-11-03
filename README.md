@@ -62,9 +62,14 @@
 1. [Write a Car class that has the following properties: registration number, maximum speed, current speed and travelled distance.](9/car.py)
 2. [Extend the program by adding an accelerate method into the new class. The method should receive the change of speed (km/h) as a parameter.](9/accelerate.py)
 3. [Again, extend the program by adding a new drive method that receives the number of hours as a parameter.](9/drive.py)
-4. [Again, extend the program by adding a new drive method that receives the number of hours as a parameter.](9/race.py)
+4. [Now we will program a car race.](9/race.py)
 
 ## 10. Association
+
+1. [Write an Elevator class that receives the numbers of the bottom and top floors as initializer parameters. ](10/elevator.py)
+2. [Extend the previous program by creating a Building class.](10/building.py)
+3. [Extend the program again by adding a method fire_alarm](10/fire.py)
+4. [This exercise continues the previous car race exercise from the last exercise set.](10/race.py)
 
 ## 11. Inheritance
 
@@ -74,3 +79,7 @@
 ## 12. Using external interfaces
 
 ## 13. Setting up a backend service with an interface
+
+1. [Implement a Flask backend service that tells whether a number received as a parameter is a prime number or not.](13/primes.py)
+2. [Implement a backend service that gets the ICAO code of an airport and then returns the name and location of the airport in JSON format.](13/icao.py)
+

@@ -8,6 +8,7 @@ class Car:
     def __str__(self) -> str:
         return f"({self.registration}, {round(self.maximum_speed_km_per_h)} km/h)"
 
+# no need to declare this here, but used by further exercises
 car = Car("ABC-123", 142)
 
 if __name__ == "__main__":

@@ -1,7 +1,7 @@
 from accelerate import Car, car
 
-def _drive(self: Car, h: float):
-    self.travelled_distance_km += h * self.current_speed_km_per_h
+def _drive(self: Car, hours: float):
+    self.travelled_distance_km += hours * self.current_speed_km_per_h
 
 Car.drive = _drive
 

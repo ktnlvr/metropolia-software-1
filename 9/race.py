@@ -35,7 +35,7 @@ def race(racers: int, early_exit: bool = True) -> tuple[list[Car], list[Car]]:
             winners.append(car)
         if time < lowest_time:
             winners = [car]
-    return (winners, cars)
+    return winners, cars
 
 def simulate():
     results = list(map(lambda _: 0, range(RACERS)))
@@ -67,6 +67,7 @@ def main():
 
     max_car_registration_len = max(map(lambda c: len(c.registration), participants))
     max_speed_len = max(map(lambda c: len(str(c.maximum_speed_km_per_h)), participants))
+    max_speed_len = max(max_speed_len, len("max speed"))
     max_travelled_distance_len = max(map(lambda c: len(str(c.travelled_distance_km)), participants))
     fmt = f"| {{:<{max_car_registration_len}}} | {{:{max_speed_len}}} | {{:{max_travelled_distance_len}}} |"
 
