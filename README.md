@@ -78,6 +78,9 @@
 
 ## 12. Using external interfaces
 
+1. [Write a program that fetches and prints out a random Chuck Norris](./12/chuck.py)
+2. [Familiarize yourself with the OpenWeather weather API](./12/weather.py)
+
 ## 13. Setting up a backend service with an interface
 
 1. [Implement a Flask backend service that tells whether a number received as a parameter is a prime number or not.](13/primes.py)
